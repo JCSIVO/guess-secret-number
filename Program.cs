@@ -30,6 +30,10 @@ public class SecretNumber {
                 Console.WriteLine("Para acertar el numero tienes: " + intentos + " intentos");
             }
 
+            // 4.1 Mismo resultado que la opción 4 pero con operadores ternarios
+
+             Console.WriteLine($"Para acertar el numero tienes {intentos} intento{(intentos == 1 ? ' ':'S')}"); 
+
 
             Console.WriteLine("Por favor introduce un numero comprendido entre 0, 20");
             int numberUser = Convert.ToInt32(Console.ReadLine());
